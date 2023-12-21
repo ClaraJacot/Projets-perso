@@ -2,10 +2,21 @@ body{
     margin:0; 
     font:normal 75% Arial, Helvetica, sans-serif;
     overflow-x: hidden; }
+h1{
+  position :relative;
+  color: red;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+}
 section {
     min-height: 100vh ;
     width: 100vw;
     margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
     }
 canvas{ 
     display: block; 
@@ -25,14 +36,21 @@ canvas{
 .btn {
     position: relative;
     display: block;
-    margin: 0 auto 0 auto;
+    margin: 5em;
     border: 2px solid hotpink;
     border-radius: 2rem;
     background-color: gold;
-    padding: 1px;
+    padding: 1em;
+    align-self: center;
+    cursor: pointer;
+    opacity: 0.75;
+    box-shadow: 5px 5PX 10px grey;
 }
+.btn:hover{
+  opacity: 1;
+}
+
 .container{
-    position :relative;
     background-image: url("fond.jpg");
     background-size: cover;
     background-position: center;
@@ -77,14 +95,90 @@ canvas{
         background-color: gold;
     };
 
-.movie{
-    z-index: 1;
-    overflow:auto;
-    background-color: pink;
-    padding-top: 100px;
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+  }
+  
+  /* Modal Content */
+  .modal-content {
     display: none;
     position: fixed;
-    width: 100%;
-    height: 100%;
-    
+    overflow: hidden;
+    border-radius: 3em;
+    border: 3px solid white;
+    margin-left: 46vh;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 46vw;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 10px 20px;
+    background-color: hotpink;
+    color: white;
+  }
+  
+  .modal-body {
+    padding: 10px 20px;
+    background-color: gold;
 }
+  
+  .modal-footer {
+    padding: 10px 20px;
+    background-color: hotpink;
+    color: white;
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }

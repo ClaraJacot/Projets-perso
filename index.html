@@ -9,16 +9,36 @@
         
     </head>
     <body>
+      <div id="particles-js"></div><!-- particles.js container --> 
         <section>
-        <!-- particles.js container --> <div id="particles-js"></div>
+        <h1>C'est bientôt Noël!</h1>
         <button class="btn">Mon calendrier</button>
         <script src="snow.js"></script>
         </section > 
 
         <section>
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 id="h2">Titre : </h2>
+                  </div>
+                  <div class="modal-body">
+                    <p id="resume">Résumé</p>
+                    <br>
+                    <p id="infos">Réalisatrice, année, etc</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="">Lien streaming vers le film</a>
+                  </div>
+                </div>
+              
+              </div>
+        
         <div class = "container"></div> 
            
         </section>
-    <script src="calendrier.js"></script>    
+    <script type="module" src="calendrier.js"></script>  
     </body>
 </html>
