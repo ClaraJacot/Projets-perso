@@ -1,44 +1,49 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>My advent calendar</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        
-    </head>
-    <body>
-      <div id="particles-js"></div><!-- particles.js container --> 
-        <section>
-        <h1>C'est bientôt Noël!</h1>
-        <button class="btn">Mon calendrier</button>
-        <script src="snow.js"></script>
-        </section > 
 
-        <section>
-            <div id="myModal" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <h2 id="h2">Titre : </h2>
-                  </div>
-                  <div class="modal-body">
-                    <p id="resume">Résumé</p>
-                    <br>
-                    <p id="infos">Réalisatrice, année, etc</p>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="">Lien streaming vers le film</a>
-                  </div>
-                </div>
-              
-              </div>
-        
-        <div class = "container"></div> 
-           
-        </section>
-    <script type="module" src="calendrier.js"></script>  
-    </body>
+<head>
+  <title>My advent calendar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="module" src="calendrier.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="particles-js"></div><!-- particles.js container -->
+  <section>
+    <h1 data-aos="fade-down">C'est bientôt Noël!</h1>
+    <h2>C'est bientôt Noël lesbien!</h2>
+    <button class="btn" data-aos="flip-up">Découvre ton calendrier</button>
+    <script src="snow.js"></script>
+  </section>
+
+  <section>
+    <div id="myModal" class="modal" >
+      <!-- Modal content -->
+      <div class="modal-content" data-aos="zoom-in">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <p id="titre">Titre : </p>
+        </div>
+        <div class="modal-body">
+          <p id="resume">Résumé</p>
+          <br>
+          <p id="infos">Réalisatrice, année, etc</p>
+        </div>
+        <div class="modal-footer">
+          <a id="lien" href="" target="_blank" rel="noopener noreferrer">Lien streaming vers le film</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" data-aos="zoom-in"></div>
+  </section>
+
+  
+</body>
+
 </html>

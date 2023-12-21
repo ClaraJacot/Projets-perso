@@ -3,12 +3,29 @@ body{
     font:normal 75% Arial, Helvetica, sans-serif;
     overflow-x: hidden; }
 h1{
+  background: -webkit-linear-gradient(#fdfdfd, #f40909);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   position :relative;
   color: red;
   text-align: center;
-  font-size: xx-large;
+  font-size: 70px;
   font-weight: bold;
+  text-transform: uppercase;
 }
+h2{
+  display: none;
+  background: -webkit-linear-gradient(#fdfdfd, #f40909);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position :relative;
+  color: red;
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  text-transform: uppercase; 
+}
+
 section {
     min-height: 100vh ;
     width: 100vw;
@@ -39,12 +56,14 @@ canvas{
     margin: 5em;
     border: 2px solid hotpink;
     border-radius: 2rem;
-    background-color: gold;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     padding: 1em;
     align-self: center;
     cursor: pointer;
-    opacity: 0.75;
+    opacity: 0.80;
     box-shadow: 5px 5PX 10px grey;
+    color: #fefefe;
 }
 .btn:hover{
   opacity: 1;
@@ -83,16 +102,19 @@ canvas{
 .txt{
     height: 100%;
     width: 100%;
-    border: 2px solid black;
+    border: 2px solid hotpink;
     border-radius: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor:grab;  
+    cursor:grab;
+    font-size: x-large;
+    color: gold;  
 }
 
 .txt:hover{
-        background-color: gold;
+  background: rgb(253,224,70);
+  background: linear-gradient(148deg, rgba(253,224,70,1) 0%, rgba(250,153,40,1) 100%);;
     };
 
 /* The Modal (background) */
@@ -115,6 +137,7 @@ canvas{
   
   /* Modal Content */
   .modal-content {
+    z-index: 1;
     display: none;
     position: fixed;
     overflow: hidden;
@@ -147,18 +170,22 @@ canvas{
   
   .modal-header {
     padding: 10px 20px;
-    background-color: hotpink;
-    color: white;
+    background: rgb(249,114,22);
+    background: linear-gradient(0deg, rgba(249,114,22,1) 0%, rgba(253,224,70,1) 100%);
+    font-weight: bold;
   }
   
   .modal-body {
     padding: 10px 20px;
-    background-color: gold;
-}
+    background: rgb(232,178,8);
+    background: linear-gradient(180deg, rgba(232,178,8,1) 0%, rgba(238,70,119,1) 80%, rgba(235,72,153,1) 100%);
+    color: #fefefe;
+  }
   
   .modal-footer {
     padding: 10px 20px;
-    background-color: hotpink;
+    background: rgb(192,38,212);
+background: linear-gradient(0deg, rgba(192,38,212,1) 0%, rgba(218,39,120,1) 100%);
     color: white;
   }
   
