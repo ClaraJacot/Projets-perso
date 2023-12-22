@@ -23,7 +23,7 @@ const openDoor = (path, event) => {
     event.target.remove();
     useModal();
   } else {
-    alert("Ce n'est pas le bon jour!")
+    alert("Petite gourmande! Ce n'est pas encore le bon jour!")
   }
 }
 

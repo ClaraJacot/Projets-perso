@@ -23,7 +23,9 @@ h2{
   text-align: center;
   font-size: 70px;
   font-weight: bold;
-  text-transform: uppercase; 
+  text-transform: uppercase;
+  -webkit-text-stroke-width:2px ;
+  -webkit-text-stroke-color: #fd0592; 
 }
 
 section {
@@ -109,7 +111,10 @@ canvas{
     justify-content: center;
     cursor:grab;
     font-size: x-large;
-    color: gold;  
+    color: gold;
+    -webkit-text-stroke-width:1px ;
+    -webkit-text-stroke-color: #000;
+      
 }
 
 .txt:hover{
@@ -163,7 +168,7 @@ canvas{
   
   .close:hover,
   .close:focus {
-    color: #000;
+    color: #f8066b;
     text-decoration: none;
     cursor: pointer;
   }
@@ -173,6 +178,11 @@ canvas{
     background: rgb(249,114,22);
     background: linear-gradient(0deg, rgba(249,114,22,1) 0%, rgba(253,224,70,1) 100%);
     font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    color: #f8066b;
+    -webkit-text-stroke-width:1px ;
+    -webkit-text-stroke-color: #000;
   }
   
   .modal-body {
@@ -180,13 +190,18 @@ canvas{
     background: rgb(232,178,8);
     background: linear-gradient(180deg, rgba(232,178,8,1) 0%, rgba(238,70,119,1) 80%, rgba(235,72,153,1) 100%);
     color: #fefefe;
+    font-size: medium;
+    
   }
   
   .modal-footer {
     padding: 10px 20px;
     background: rgb(192,38,212);
-background: linear-gradient(0deg, rgba(192,38,212,1) 0%, rgba(218,39,120,1) 100%);
+    background: linear-gradient(0deg, rgba(192,38,212,1) 0%, rgba(218,39,120,1) 100%);
     color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
   }
   
   /* Add Animation */

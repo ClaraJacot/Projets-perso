@@ -19,7 +19,7 @@
 }
  function ajoutResume(movies,id){
     let myResume = document.getElementById("resume");
-    myResume.textContent = movies[id-1].resume;
+    myResume.textContent = movies[id-1].resume+" (Sources : Wikipédia, Allociné ou SensCritique)";
 }
  function ajoutInfos(movies,id) {
     let myInfos = document.getElementById("infos");
