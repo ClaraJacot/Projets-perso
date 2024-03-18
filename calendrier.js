@@ -2,7 +2,7 @@ AOS.init({
   duration: 1200,
 })
 import { ajoutTitre, ajoutResume, ajoutInfos, ajoutLien } from "./modal.js";
-import movies from './movies.js';
+import movies from './datas/movies.js';
 //console.log(movies)
 //console.log(movies[5-1].titre);
 
@@ -44,7 +44,7 @@ const createCalendar = () => {
     calendarOpenDoor.appendChild(calendarDoor);
 
     let imgNumber = i + 1
-    let imgPath = `./img${imgNumber}.jpg`;
+    let imgPath = `./images/img${imgNumber}.jpg`;
 
     calendarDoor.addEventListener("click", openDoor.bind(null, imgPath));
   }
